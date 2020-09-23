@@ -1,0 +1,19 @@
+Para entrar al shell
+--------------------------
+> python manage.py shell
+
+una vez dentro:
+>>> from main.models import Curso
+>>> Curso.objects.all()
+>>> from django.utils import timezone
+>>> new_curso = Curso(curso_titulo="Curso 1", curso_contenido="abcd", curso_publicado = timezone.now())
+>>> new_curso.save()
+
+Crear un superusuario
+-----------------------------
+> python manage.py createsuperuser
+
+AGREGAR UN PLUGIN DE EDICION DE TEXTO
+******************************************
+
+>pip install django-tinymce4-lite
