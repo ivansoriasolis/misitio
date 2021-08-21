@@ -16,7 +16,7 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 def hola():
-    return 'hola'
+    return True
 
 if __name__ == '__main__':
     main()
